@@ -1,0 +1,15 @@
+//- docs/index.jade
+extends ../layout
+
+block content
+	.row
+		.large-12.column
+			h1 Personality Type Documents
+			block pdfsList
+				- var pdfsPath = '/data/pdfs/'
+				table 
+					- for ( var i in pdfs) {
+						tr
+							td: a.fi-arrow-down
+							td: a(href="#") &nbsp; #{pdfs[i]}
+					- };

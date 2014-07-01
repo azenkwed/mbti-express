@@ -1,0 +1,156 @@
+{
+  "mbtis": [
+    {
+      "id": 1,
+      "name": "Form M",
+      "_author": "Abdelkader DJEHAF",
+      "_version": "0.0.1",
+      "_description": "MBTI® Form M Myers-Briggs Type Indicator ® (MBTI ®) Step I (Form M). Results indicate preferences for one of the 16 types.",
+      "_personalityTypes": "E|I , S|N, T|F, J|P",
+      "_keys": "id, question, a1, a2, v1. v2",
+      "_numberOfQuestions": 93,
+      "parts": [
+        {
+          "id": 1,
+          "title": "Which answer comes closest to describing how you usually feel or act ?",
+          "questions": [
+            {
+              "id": 1,
+              "question": "When you go somewhere for the day, would you rather",
+              "a1": "plan what you will do and when",
+              "a2": "just go",
+              "v1": "j",
+              "v2": "p"
+            },
+            {
+              "id": 2,
+              "question": "Do you consider yourself to be",
+              "a1": "more of a spontaneous person",
+              "a2": "more of an organised person",
+              "v1": "p",
+              "v2": "j"
+            },
+            {
+              "id": 3,
+              "question": "if you were a teacher, would you rather teach",
+              "a1": "fact courses",
+              "a2": "courses involving theory",
+              "v1": "s",
+              "v2": "n"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Which word in each pair appeals to you more? Think about what the words mean, not about how they look or how they sound.",
+          "questions": [
+            {
+              "id": 27,
+              "question": null,
+              "a1": "private",
+              "a2": "open",
+              "v1": "i",
+              "v2": "e"
+            },
+            {
+              "id": 28,
+              "question": null,
+              "a1": "schedules",
+              "a2": "unplanned",
+              "v1": "j",
+              "v2": "p"
+            },
+            {
+              "id": 29,
+              "question": null,
+              "a1": "abstract",
+              "a2": "solid",
+              "v1": "n",
+              "v2": "s"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Which answer comes closest to describing how you usually feel or act ?",
+          "questions": [
+            {
+              "id": 59,
+              "question": "when you start a big project that is due in a week, do you",
+              "a1": "take time to list separate things to be done and the order of doing them",
+              "a2": "plunge right in",
+              "v1": "j",
+              "v2": "p"
+            },
+            {
+              "id": 60,
+              "question": "in social sitations do you generally find it",
+              "a1": "difficult to start and maintain a conversation with some people",
+              "a2": "easy to talk to most people for long periods of time",
+              "v1": "i",
+              "v2": "e"
+            },
+            {
+              "id": 61,
+              "question": "in doing something that many other people do, does it appeal to you more to",
+              "a1": "do it in the accepted way",
+              "a2": "invent a way of your own",
+              "v1": "s",
+              "v2": "n"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Which word in each pair appeals to you more ? Think about what the words mean, not about how they look or how they sound.",
+          "questions": [
+            {
+              "id": 79,
+              "question": null,
+              "a1": "imaginative",
+              "a2": "realistic",
+              "v1": "n",
+              "v2": "s"
+            },
+            {
+              "id": 80,
+              "question": null,
+              "a1": "bighearted",
+              "a2": "firm-minded",
+              "v1": "f",
+              "v2": "t"
+            },
+            {
+              "id": 81,
+              "question": null,
+              "a1": "fair-minded",
+              "a2": "caring",
+              "v1": "t",
+              "v2": "f"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Form Q",
+      "_author": "Abdelkader DJEHAF",
+      "_version": "0.0.1",
+      "_description": "MBTI® Form Q Myers-Briggs Type Indicator ® (MBTI ®) Step II (Form Q). Results fulfill Isabel Myers' plan to provide people with individualized type reports that reflect the distinctive ways they express their type preferences",
+      "_personalityTypes": "E|I , S|N, T|F, J|P",
+      "_keys": "id, question, a1, a2, v1. v2",
+      "_numberOfQuestions": 144
+    },
+    {
+      "id": 3,
+      "name": "Step 3",
+      "_author": "Abdelkader DJEHAF",
+      "_version": "0.0.1",
+      "_description": "MBTI® Form Q Myers-Briggs Type Indicator ® (MBTI ®) Step III (Form M+Q). Analysis actualizes Myers' goal of helping people use their natural types as effectively as possible",
+      "_personalityTypes": "E|I , S|N, T|F, J|P",
+      "_keys": "id, question, a1, a2, v1. v2",
+      "_numberOfQuestions": 222
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "title": "",
+  "subsection": "",
+  "subsubsection": "",
+  "aka": "",
+  "description": "",
+  "jfpo": {
+    "title": "",
+    "Dominant": "",
+    "Auxiliary": "",
+    "Tertiary": ""
+  },
+  "relationships": {
+    "title": "",
+    "strength": [
+      "",
+      ""
+    ],
+    "weaknesses": [],
+    "": ""
+  },
+  "success": {
+    "title": "",
+    "paragraph": "",
+    "subtitle": "",
+    "paragraph2": "",
+    "strength": [
+      "",
+      ""
+    ],
+    "paragraph3": "",
+    "list": [],
+    "problems": {
+      "title": "",
+      "paragraph": "",
+      "subtitle": "",
+      "paragraph2": "",
+      "subtitle2": "",
+      "pararaph3": "",
+      "subtitle3": "",
+      "pararaph4": "",
+      "subtitle4": "",
+      "paragraphe5": "",
+      "list": [
+        "Ten Rules to Live By",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  },
+  "career": {
+    "description": "",
+    "trait": [
+      "",
+      ""
+    ],
+    "paragraph": "",
+    "path": [
+      "",
+      ""
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+block vars
+	//- PATH
+	- var host 	= "http://localhost:3000/"
+	- var home 	= '/'
+	- var about = '/about'
+	- var mbtis = '/mbtis'
+	- var formm	= '/mbtis/0'
+	- var formq = '/mbtis/1'
+	- var step3 = '/mbtis/2'
+	- var test 	= '/mbtis/0'
+	- var admin = '/admin'
+	- var login = '/admin/login'
+	- var docs 	= '/docs'
+	- var more 	= '/more'
+
+
+// [if IE 9]><html class="lt-ie10" lang="en" > <![endif]
+html.no-js(lang="en")
+	head
+		title= title
+
+		block meta
+
+		block stylesheets
+			link(rel='stylesheet', href= host+'css/normalize.css')
+			link(rel='stylesheet', href= host+'css/foundation.min.css')
+			link(rel='stylesheet', href= host+'fonts/foundation-icons.css')
+
+		block HeadScripts
+			script(src= host+"js/vendor/modernizr.js")
+
+
+	body
+
+		block navbar
+			//- NAVBAR FOR SMALL SCREEN
+			nav.tab-bar.show-for-small
+				a.left-off-canvas-toggle.menu-icon
+					span MBTI
+			
+			//- div.contain-to-grid.sticky		
+			nav.top-bar.docs-bar.hide-for-small(data-topbar='data-topbar')
+				ul.title-area
+					li.name
+						h1
+							a(href=home) MBTI-Express&copy;
+					section.top-bar-section
+						ul.right
+							li.divider
+							li.has-dropdown
+								a(href=home) Home
+								ul.dropdown
+									li: a(href=about) About
+							li.divider
+							li.has-dropdown
+								a(href=mbtis) MBTI
+								ul.dropdown
+									li: a(href=formm) FORM M
+									li: a(href=formq) FORM Q
+									li: a(href=step3) Step III
+							li.divider
+							li.has-dropdown
+								a(href=login) Admin
+								ul.dropdown
+									li: a(href=admin) Admin
+							li.divider
+							li
+								a(href=more) More
+							li.divider
+							li
+								a(href=docs) Docs
+							li.divider
+							li.has-form
+								a.small.button(href=test) Take the test
+
+
+
+
+		block content
+
+
+		block scripts
+			script(src= host+"js/vendor/jquery.js")
+			script(src= host+"js/foundation.min.js")
+			script $(document).foundation();
+

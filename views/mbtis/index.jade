@@ -1,0 +1,30 @@
+//- mbtis/index.jade
+
+extends ../layout
+
+block content
+	.row
+		.large-12.columns 
+			h1 MBTI&copy; forms available
+
+			block mbtiFormsList
+				if json.length > 0
+					table
+						thead: tr
+							td Name
+							td Description
+							td Questions
+						tbody
+						- for ( var i in json ) {
+							tr
+								td(width='75px')
+									a(name=json[i].name, href='/mbtis/'+i) 
+										b=json[i].name
+								td=json[i]._description
+								td: center=json[i]._numberOfQuestions
+						- };
+				else
+					.row
+						.small-6.columns
+							.panel.callout
+								h5 Sorry, there is no forms available

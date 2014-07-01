@@ -1,0 +1,15 @@
+//- /admin/login.jade
+extends ../layout
+
+block content
+	.row
+		.large-12.columns
+			.panel
+				center: h1 Admin Section
+
+				form(id="login", method="get", action="/authorised")
+					input(type='text' placeholder='login')
+					input(type='password' placeholder='password')
+					input.button.tiny.expand(type='submit' value='Login')
+
+
