@@ -3,9 +3,7 @@ var router = express.Router();
 
 var mbtisData = require('../data/json/mbtis.json') //cause error
 var mbtis = mbtisData.mbtis;
-//var json = {"root":[{"id": 1, "key":"value 1"},{"id":2, "key":"value 2"}]};
-//var root = json.root;
-/* GET mbtis listing. */
+
 router.get('/', function (req, res) {
   	res.render('mbtis/index', { json: mbtis });
 });

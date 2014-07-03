@@ -1,71 +1,71 @@
 {
-  "title": "",
-  "subsection": "",
-  "subsubsection": "",
-  "aka": "",
-  "description": "",
-  "jfpo": {
-    "title": "",
-    "Dominant": "",
-    "Auxiliary": "",
-    "Tertiary": ""
-  },
-  "relationships": {
-    "title": "",
-    "strength": [
-      "",
-      ""
-    ],
-    "weaknesses": [],
-    "": ""
-  },
-  "success": {
-    "title": "",
-    "paragraph": "",
-    "subtitle": "",
-    "paragraph2": "",
-    "strength": [
-      "",
-      ""
-    ],
-    "paragraph3": "",
-    "list": [],
-    "problems": {
-      "title": "",
-      "paragraph": "",
-      "subtitle": "",
-      "paragraph2": "",
-      "subtitle2": "",
-      "pararaph3": "",
-      "subtitle3": "",
-      "pararaph4": "",
-      "subtitle4": "",
-      "paragraphe5": "",
-      "list": [
-        "Ten Rules to Live By",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  },
+  "type" : "ENFJ"
+  ,
+  "portrait": {
+      "accronym" : ""
+    , "definition": ""
+    , "aka": ""
+    , "description": "<p></p>"
+    , "jfpo": {
+          "title": "Jungian functional preference ordering"   
+        , "Dominant": ""
+        , "Auxiliary": ""
+        , "Tertiary": ""
+        , "Inferior": "" 
+      }
+  }
+  ,
   "career": {
-    "description": "",
-    "trait": [
-      "",
-      ""
-    ],
-    "paragraph": "",
-    "path": [
-      "",
-      ""
-    ]
+      "description":"<p></p>"
+    , "traits": {
+          "list":[]
+        , "description": "<p></p>"
+      } 
+    , "careers": {
+          "description": "<p></p>"
+        , "list": []
+      }
+  }
+  ,
+  "relations": {
+      "description": "<p></p>"
+    , "strengths": {
+          "title": ""
+        , "list": []
+
+      }
+    , "weaknesses": {
+          "title": ""
+        ,  "list": []
+      }
+
+  }
+  ,
+  "growth": {
+      "success": {
+          "title": ""
+        , "description": "<p></p>"
+      }
+    , "strengths": {
+          "title": ""
+        , "description": "<p></p>"
+        , "list": []
+      }
+    , "development": {
+          "description": ""
+        , "list": []
+    }
+    , "problems": {
+          "description": "<p></p>"
+        , "explanation": "<p></p>"
+        , "solution": "<p></p>"
+    }
+    , "happiness": "<p></p>"
+    , "suggestions": "<p></p>"
+    , "rules":{
+          "title":""
+        , "list": []
+      }
+
   }
 }
