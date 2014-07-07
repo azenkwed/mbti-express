@@ -3,4 +3,63 @@ extends layout
 block content
 	.row
 		.large-12.columns
-			img(src="http://placehold.it/1000x400&text=[banner img]")
+			//- img(src="http://placehold.it/1000x400&text=[banner img]")
+			center
+				h1 16 Personalities. Which one are you ?
+				table
+					tr(valign="top")
+						td: a(href="/personalities/istj")
+							h3 ISTJ
+							h5.subheader The Duty Fulfiller
+						td: a(href="/personalities/isfj")
+							h3 ISFJ
+							h5.subheader The Nurturer
+						td: a(href="/personalities/infj")
+							h3 INFJ
+							h5.subheader The Protector
+						td: a(href="/personalities/intj")
+							h3 INTJ
+							h5.subheader The Scientist
+					tr(valign="top")
+						td: a(href="/personalities/istp")
+							h3 ISTP
+							h5.subheader The Mechanic
+						td: a(href="/personalities/isfp")
+							h3 ISFP
+							h5.subheader The Artist
+						td: a(href="/personalities/infp")
+							h3 INFP
+							h5.subheader The Idealist
+						td: a(href="/personalities/intp")
+							h3 INTP
+							h5.subheader The Thinker
+					tr(valign="top")
+						td: a(href="/personalities/estp")
+							h3 ESTP
+							h5.subheader The Doer
+						td: a(href="/personalities/esfp")
+							h3 ESFP
+							h5.subheader The Performer
+						td: a(href="/personalities/enfp")
+							h3 ENFP
+							h5.subheader The Inspirer
+						td: a(href="/personalities/entp")
+							h3 ENTP
+							h5.subheader The Visionary
+					tr(valign="top")
+						td: a(href="/personalities/estj")
+							h3 ESTJ
+							h5.subheader The Guardian
+						td: a(href="/personalities/esfj")
+							h3 ESFJ
+							h5.subheader The Caregiver
+						td: a(href="/personalities/enfj")
+							h3 ENFJ
+							h5.subheader  The Giver
+						td: a(href="/personalities/entj")
+							h3 ENTJ
+							h5.subheader The Executive
+
+
+				hr
+				p: a.button(href=test) Take the test !

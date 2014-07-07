@@ -9,56 +9,56 @@ block content
 				h5 !{mbti._description}
 
 			block questionnaire
+				if (!undefined)
+					- var parts = mbti.parts
+					- var id = parts.id
+					- var title = parts.title
+					- var question = parts.question
+					- var a1 = parts.a1
+					- var a2 = parts.a2
+					- var v1 = parts.v1
+					- var v2 = parts.v2
 
-				- var parts = mbti.parts
-				- var id = parts.id
-				- var title = parts.title
-				- var question = parts.question
-				- var a1 = parts.a1
-				- var a2 = parts.a2
-				- var v1 = parts.v1
-				- var v2 = parts.v2
+					
+					form(id="mbtiForm", method="POST", action="/mbtis/result")
+						- for (var part in parts) {
+							section(id='Part-#{parts[part].id}')
+								hr
+								h3= parts[part].title
+								- var questions = parts[part].questions 
+								- for (var q in questions) {
+										- var id = questions[q].id
+										- var question = questions[q].question
+										- var a1 = questions[q].a1
+										- var a2 = questions[q].a2
+										- var v1 = questions[q].v1
+										- var v2 = questions[q].v2
+									div.question(style="padding-left:20px")
+										if question != null
 
-				
-				form(id="mbtiForm", method="POST", action="/mbtis/result")
-					- for (var part in parts) {
-						section(id='Part-#{parts[part].id}')
-							hr
-							h3= parts[part].title
-							- var questions = parts[part].questions 
-							- for (var q in questions) {
-									- var id = questions[q].id
-									- var question = questions[q].question
-									- var a1 = questions[q].a1
-									- var a2 = questions[q].a2
-									- var v1 = questions[q].v1
-									- var v2 = questions[q].v2
-								div.question(style="padding-left:20px")
-									if question != null
+											h4 #{id}.&nbsp;!{ucfirst(question)}&nbsp;?
+											
+											p(style="padding-left:50px;")
+												input(type="radio", name=id+"."+q, value=v1) 
+												label !{ucfirst(a1)}.
+												br
+												input(type="radio", name=id+"."+q, value=v2)
+												label !{ucfirst(a2)}.
 
-										h4 #{id}.&nbsp;!{ucfirst(question)}&nbsp;?
-										
-										p(style="padding-left:50px;")
-											input(type="radio", name=id+"."+q, value=v1) 
-											label !{ucfirst(a1)}.
-											br
-											input(type="radio", name=id+"."+q, value=v2)
-											label !{ucfirst(a2)}.
+										else
+											//- h4 #{id}.
+											p(style="padding-left:50px;")
+												input(type="radio", name=id+"."+q, value=v1) 
+												label !{ucfirst(a1)}.
+												br
+												input(type="radio", name=id+"."+q, value=v2)
+												label !{ucfirst(a2)}.
 
-									else
-										//- h4 #{id}.
-										p(style="padding-left:50px;")
-											input(type="radio", name=id+"."+q, value=v1) 
-											label !{ucfirst(a1)}.
-											br
-											input(type="radio", name=id+"."+q, value=v2)
-											label !{ucfirst(a2)}.
+								- };
 
-							- };
+						- };
+						button(id='submit', type='submit', class='expand', value='submit') SUBMIT
 
-					- };
-					button(id='submit', type='submit', class='expand', value='submit') SUBMIT
-						
 
 
 

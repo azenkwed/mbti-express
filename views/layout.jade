@@ -69,8 +69,8 @@ html.no-js(lang="en")
 								a(href=more) More
 							
 							li.divider
-							li
-								a(href=docs) Docs
+							//- li
+							//- 	a(href=docs) Docs
 							li.divider
 							li.has-form
 								a.small.button(href=test) Take the test
@@ -80,7 +80,7 @@ html.no-js(lang="en")
 		.row
 			.large-12.columns
 				dl.sub-nav
-					dt Personalities:
+					dt: a(href='/personalities') Personalities:
 					each p in personalities
 						dd: a(href='/personalities/#{p}', style="padding: 0.1875rem 0rem; color: #008CBA") #{toUpperCase(p)}
 

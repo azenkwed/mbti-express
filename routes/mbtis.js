@@ -43,7 +43,7 @@ router.post('/result', function (req, res) {
 
 	console.log(result);
 	
-	res.render('mbtis/result', { title: result, result: result });
+	res.render('personalities/'+result, { title: result, result: result });
 
 });
 
