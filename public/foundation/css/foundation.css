@@ -2356,7 +2356,7 @@ meta.foundation-mq-topbar {
     [data-magellan-expedition] .sub-nav dd, [data-magellan-expedition-clone] .sub-nav dd {
       margin-bottom: 0; }
     [data-magellan-expedition] .sub-nav a, [data-magellan-expedition-clone] .sub-nav a {
-      line-height: 1.8em; }
+      line-height: 1.8em; 
 
 div.icon-bar {
   width: 100%;

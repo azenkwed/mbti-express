@@ -23,7 +23,6 @@ block content
 				form(id="mbtiForm", method="POST", action="/mbtis/result")
 					- for (var part in parts) {
 						section(id='Part-#{parts[part].id}')
-							hr
 							h3= parts[part].title
 							- var questions = parts[part].questions 
 							- for (var q in questions) {
@@ -47,12 +46,13 @@ block content
 
 									else
 										//- h4 #{id}.
-										p(style="padding-left:50px;")
-											input(type="radio", name=id+"."+q, value=v1) 
-											label !{ucfirst(a1)}.
-											br
-											input(type="radio", name=id+"."+q, value=v2)
-											label !{ucfirst(a2)}.
+										div(style="border:solid 1px black;")
+											p(style="padding-left:50px;")
+												input(type="radio", name=id+"."+q, value=v1) 
+												label !{ucfirst(a1)}.
+												br
+												input(type="radio", name=id+"."+q, value=v2)
+												label !{ucfirst(a2)}.
 
 							- };
 

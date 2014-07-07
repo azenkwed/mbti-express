@@ -9,6 +9,7 @@ var routes = require('./routes/index');
 var mbtis  = require('./routes/mbtis');
 var admin  = require('./routes/admin');
 var docs  = require('./routes/docs');
+var personalities  = require('./routes/personalities');
 
 var app = express();
 
@@ -28,6 +29,7 @@ app.use('/', routes)
 app.use('/mbtis', mbtis);
 app.use('/admin', admin);
 app.use('/docs', docs);
+app.use('/personalities', personalities);
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -62,6 +64,12 @@ app.use(function(err, req, res, next) {
 
 app.locals.ucfirst = function(value){
     return value.charAt(0).toUpperCase() + value.slice(1);
+};
+app.locals.toUpperCase = function(value){
+    return value.toUpperCase();
+};
+app.locals.toLowerCase = function(value){
+    return value.toLowerCase();
 };
 
 module.exports = app;

@@ -12,6 +12,7 @@ block vars
 	- var login = '/admin/login'
 	- var docs 	= '/docs'
 	- var more 	= '/more'
+	- var personalities = ['enfj', 'enfp', 'entj', 'entp', 'esfj', 'esfp', 'estj', 'estp', 'infj', 'infp', 'intj', 'intp', 'isfj', 'isfp', 'istp', 'istp']
 
 
 // [if IE 9]><html class="lt-ie10" lang="en" > <![endif]
@@ -49,7 +50,7 @@ html.no-js(lang="en")
 							li.divider
 							li.has-dropdown
 								a(href=home) Home
-								ul.dropdown
+								//- ul.dropdown
 									li: a(href=about) About
 							li.divider
 							li.has-dropdown
@@ -59,13 +60,14 @@ html.no-js(lang="en")
 									li: a(href=formq) FORM Q
 									li: a(href=step3) Step III
 							li.divider
-							li.has-dropdown
+							//- li.has-dropdown
 								a(href=login) Admin
 								ul.dropdown
 									li: a(href=admin) Admin
 							li.divider
 							li
 								a(href=more) More
+							
 							li.divider
 							li
 								a(href=docs) Docs
@@ -73,8 +75,13 @@ html.no-js(lang="en")
 							li.has-form
 								a.small.button(href=test) Take the test
 
+		block subnav
+			//- Personalities SUB Nav
 
-
+			dl.sub-nav
+				dt Personalities:
+				each p in personalities
+					dd: a(href='/personalities/#{p}', style="padding: 0.1875rem 0rem; color: #008CBA") #{toUpperCase(p)}
 
 		block content
 
