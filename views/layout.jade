@@ -77,11 +77,12 @@ html.no-js(lang="en")
 
 		block subnav
 			//- Personalities SUB Nav
-
-			dl.sub-nav
-				dt Personalities:
-				each p in personalities
-					dd: a(href='/personalities/#{p}', style="padding: 0.1875rem 0rem; color: #008CBA") #{toUpperCase(p)}
+		.row
+			.large-12.columns
+				dl.sub-nav
+					dt Personalities:
+					each p in personalities
+						dd: a(href='/personalities/#{p}', style="padding: 0.1875rem 0rem; color: #008CBA") #{toUpperCase(p)}
 
 		block content
 
