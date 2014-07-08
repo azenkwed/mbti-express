@@ -5,7 +5,7 @@
       "name": "Form M",
       "_author": "Abdelkader DJEHAF",
       "_version": "0.0.1",
-      "_description": "MBTI® Form M Myers-Briggs Type Indicator ® (MBTI ®) Step I (Form M). Results indicate preferences for one of the 16 types.",
+      "_description": "MBTI&reg; Form M Myers-Briggs Type Indicator &reg; (MBTI &reg;) Step I (Form M). Results indicate preferences for one of the 16 types.",
       "_personalityTypes": "E|I , S|N, T|F, J|P",
       "_keys": "id, question, a1, a2, v1. v2",
       "_numberOfQuestions": 93,
@@ -785,7 +785,7 @@
       "name": "Form Q",
       "_author": "Abdelkader DJEHAF",
       "_version": "0.0.1",
-      "_description": "MBTI® Form Q Myers-Briggs Type Indicator ® (MBTI ®) Step II (Form Q). Results fulfill Isabel Myers' plan to provide people with individualized type reports that reflect the distinctive ways they express their type preferences",
+      "_description": "MBTI&reg; Form Q Myers-Briggs Type Indicator &reg; (MBTI &reg;) Step II (Form Q). Results fulfill Isabel Myers' plan to provide people with individualized type reports that reflect the distinctive ways they express their type preferences",
       "_personalityTypes": "E|I , S|N, T|F, J|P",
       "_keys": "id, question, a1, a2, v1. v2",
       "_numberOfQuestions": 144
@@ -795,7 +795,7 @@
       "name": "Step 3",
       "_author": "Abdelkader DJEHAF",
       "_version": "0.0.1",
-      "_description": "MBTI® Form Q Myers-Briggs Type Indicator ® (MBTI ®) Step III (Form M+Q). Analysis actualizes Myers' goal of helping people use their natural types as effectively as possible",
+      "_description": "MBTI&reg; Form Q Myers-Briggs Type Indicator &reg; (MBTI &reg;) Step III (Form M+Q). Analysis actualizes Myers' goal of helping people use their natural types as effectively as possible",
       "_personalityTypes": "E|I , S|N, T|F, J|P",
       "_keys": "id, question, a1, a2, v1. v2",
       "_numberOfQuestions": 222

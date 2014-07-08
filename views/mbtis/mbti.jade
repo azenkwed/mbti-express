@@ -9,7 +9,11 @@ block content
 				h5 !{mbti._description}
 
 			block questionnaire
-				if (!undefined)
+			if (typeof(mbti.parts) == 'undefined' || mbti.parts == null) 
+
+				h3(style="color:red;") This form is not yet available.
+				
+			else
 					- var parts = mbti.parts
 					- var id = parts.id
 					- var title = parts.title
@@ -18,7 +22,6 @@ block content
 					- var a2 = parts.a2
 					- var v1 = parts.v1
 					- var v2 = parts.v2
-
 					
 					form(id="mbtiForm", method="POST", action="/mbtis/result")
 						- for (var part in parts) {
