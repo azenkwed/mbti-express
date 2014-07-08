@@ -1,4 +1,4 @@
-require('newrelic')
+//require('newrelic')
 var express = require('express');
 var path = require('path');
 var favicon = require('static-favicon');

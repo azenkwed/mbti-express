@@ -82,9 +82,11 @@ html.no-js(lang="en")
 		.row
 			.large-12.columns
 				dl.sub-nav
-					dt: a(href='/personalities') Personalities:
+					dt
+						a(href='/personalities') Personalities:
 					each p in personalities
-						dd: a(href='/personalities/#{p}', style="padding: 0.1875rem 0rem; color: #008CBA") #{toUpperCase(p)}
+						dd
+							a(href='/personalities/#{p}', style="padding: 0.1875rem 0rem; color: #008CBA") #{toUpperCase(p)}
 
 		block content
 
