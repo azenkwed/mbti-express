@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-var mbtisData = require('../data/json/mbtis.json') //cause error
+var mbtisData = require('../data/json/mbtis.min.json') //cause error
 var mbtis = mbtisData.mbtis;
 
 router.get('/', function (req, res) {
