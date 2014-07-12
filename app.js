@@ -5,6 +5,7 @@ var favicon = require('static-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var logfmt = require('logfmt');
 
 var routes = require('./routes/index');
 var mbtis  = require('./routes/mbtis');
@@ -24,6 +25,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public/foundation')));
+app.use(logfmt.requestLogger());
 
 // ROUTES
 app.use('/', routes)
