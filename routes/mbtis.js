@@ -35,10 +35,10 @@ router.post('/result', function (req, res) {
 		if (req.body[key] === 'j' ) J++;
 	};
 	var str1 = '', str2 = '', str3 = '', str4 = '';
-	if (E === I || E < I) str1 = 'I'; else srt1 = 'E';
-	if (S === N || S < N) str2 = 'N'; else str2 = 'S';
-	if (T === F || T < F) str3 = 'F'; else str3 = 'T';
-	if (J === P || J < P) str4 = 'P'; else str4 = 'J';
+	if (E === I || E < I) str1 = 'i'; else srt1 = 'e';
+	if (S === N || S < N) str2 = 'n'; else str2 = 's';
+	if (T === F || T < F) str3 = 'f'; else str3 = 't';
+	if (J === P || J < P) str4 = 'p'; else str4 = 'j';
 	var result = str1.concat(str2, str3, str4);
 
 	console.log(result);

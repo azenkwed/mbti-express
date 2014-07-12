@@ -63,3 +63,6 @@
 {"name":"newrelic","hostname":"Kaders-MacBook-Pro.local","pid":1473,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2014-07-12T12:38:12.628Z","v":0}
 {"name":"newrelic","hostname":"Kaders-MacBook-Pro.local","pid":1473,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/713936/applications/4452734","time":"2014-07-12T12:38:14.926Z","v":0}
 {"name":"newrelic","hostname":"Kaders-MacBook-Pro.local","pid":1473,"component":"collector_api","level":30,"msg":"Connected to collector-141.newrelic.com:443 with agent run ID 1490575644.","time":"2014-07-12T12:38:14.931Z","v":0}
+{"name":"newrelic","hostname":"Kaders-MacBook-Pro.local","pid":2082,"level":30,"msg":"Starting New Relic for Node.js connection process.","time":"2014-07-12T12:48:23.830Z","v":0}
+{"name":"newrelic","hostname":"Kaders-MacBook-Pro.local","pid":2082,"component":"new_relic_response","level":30,"msg":"Reporting to: https://rpm.newrelic.com/accounts/713936/applications/4452734","time":"2014-07-12T12:48:25.350Z","v":0}
+{"name":"newrelic","hostname":"Kaders-MacBook-Pro.local","pid":2082,"component":"collector_api","level":30,"msg":"Connected to collector-141.newrelic.com:443 with agent run ID 1490593808.","time":"2014-07-12T12:48:25.350Z","v":0}
