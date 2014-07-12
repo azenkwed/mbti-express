@@ -20,7 +20,7 @@ block content
 								td(width='75px')
 									a(name=json[i].name, href='/mbtis/'+i) 
 										b=json[i].name
-								td=json[i]._description
+								td !{json[i]._description}
 								td: center=json[i]._numberOfQuestions
 						- };
 				else
