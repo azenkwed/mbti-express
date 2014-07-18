@@ -23,7 +23,7 @@ block content
 					- var v1 = parts.v1
 					- var v2 = parts.v2
 					
-					form(id="mbtiForm", method="POST", action="/mbtis/result")
+					form(id="mbtiForm", method="POST", action="/mbtis/result", data-abide)
 						- for (var part in parts) {
 							section(id='Part-#{parts[part].id}')
 								hr
@@ -42,19 +42,19 @@ block content
 											h4 #{id}.&nbsp;!{ucfirst(question)}&nbsp;?
 											
 											p(style="padding-left:50px;")
-												input(type="radio", name=id+"."+q, value=v1) 
+												input(type="radio", name=id+"."+q, value=v1, required) 
 												label !{ucfirst(a1)}.
 												br
-												input(type="radio", name=id+"."+q, value=v2)
+												input(type="radio", name=id+"."+q, value=v2, required)
 												label !{ucfirst(a2)}.
 
 										else
 											//- h4 #{id}.
 											p(style="padding-left:50px;")
-												input(type="radio", name=id+"."+q, value=v1) 
+												input(type="radio", name=id+"."+q, value=v1, required) 
 												label !{ucfirst(a1)}.
 												br
-												input(type="radio", name=id+"."+q, value=v2)
+												input(type="radio", name=id+"."+q, value=v2,required)
 												label !{ucfirst(a2)}.
 
 								- };
