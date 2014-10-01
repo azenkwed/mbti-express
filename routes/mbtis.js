@@ -12,7 +12,7 @@ router.get('/', function (req, res) {
 router.get('/:mbti_id', function (req, res, next) {
 	var param = mbtis[req.params.mbti_id];
 	
-	for (var i in param) console.log(i);
+	//for (var i in param) console.log(i);
 	
 	if (param) {
 		res.render('mbtis/mbti', { mbti: param });
